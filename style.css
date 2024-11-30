@@ -1,0 +1,103 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #be18e7;
+  }
+  
+  /* Navbar */
+  .navbar {
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+  }
+  
+  .offcanvas {
+    background-color: #0c7508;
+  }
+  
+  /* Carousel */
+  .carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+  
+  /* Image Gallery */
+  .cus-img img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .cus-img img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Cards (New Arrivals & Featured) */
+  .card {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgb(161, 4, 209);
+  }
+  
+  .card-img-top {
+    border-bottom: 3px solid #17a2b8;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  /* Banner Section */
+  .banner {
+    margin: 2rem 0;
+  }
+  
+  .banner img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Footer */
+  footer {
+    color: rgb(170, 23, 23);
+  }
+  
+  footer a {
+    color: #9b0863;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .fa-instagram:hover {
+    color: #e4405f;
+  }
+  
+  footer .fa-facebook:hover {
+    color: #790d73;
+  }
+  
+  footer .fa-twitter:hover {
+    color: #1da1f2;
+  }
+  

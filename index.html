@@ -1,0 +1,430 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font-aws -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+      
+      <!-- nav -->
+      <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">TRENd</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar"> -->
+            <!-- Add ms-auto to right-align the navbar items -->
+        <!--    <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">TRENd</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collapsible navbar content for larger screens -->
+          <div class="collapse navbar-collapse d-none d-sm-flex" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+               </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Off-Canvas Sidebar -->
+      <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasSidebarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      
+
+
+      <!-- <div class="banner"> -->
+        <!-- <div class="container"> -->
+          
+          <div id="demo" class="carousel slide pointer-event" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://www.bing.com/images/blob?bcid=r5AYU-41380HfQ" alt="Los Angeles" class="d-block w-100" style="max-height: 400px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-dark bg-light p-2 rounded">"Feel Confident, Look Stunning."</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.bing.com/images/blob?bcid=S.tV.nRmVM0HqxcxoNWLuD9SqbotqVTdP1Q" alt="Chicago" class="d-block w-100" style="max-height: 400px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-light bg-dark p-2 rounded">"Walk in Trend, Walk in Confidence."</h3>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.bing.com/images/blob?bcid=S38vkYzGos0HqxcxoNWLuD9SqbotqVTdPyk" alt="New York" class="d-block w-100" style="max-height: 400px; object-fit: cover;">
+                
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-dark bg-light p-2 rounded">"Be Bold. Be Beautiful. Be You."</h3>
+                </div>  
+              </div>
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+          
+
+        <!-- </div> -->
+      <!-- </div> -->
+
+      <div class="cus-img">
+        <div class="container my-5">
+          <div class="d-flex flex-wrap justify-content-center">
+            <img src="https://www.bing.com/images/blob?bcid=S87iSMKpk80HqxcxoNWLuD9SqbotqVTdPzY" alt="character" class="img-fluid mx-2 mb-3" style="width: 400px;">
+            <img src="https://www.bing.com/images/blob?bcid=S2oq0li3wc0HqxcxoNWLuD9SqbotqVTdP20" alt="character" class="img-fluid mx-2 mb-3" style="width: 400px;">
+            <img src="https://www.bing.com/images/blob?bcid=S9KKKL34e80HqxcxoNWLuD9SqbotqVTdP78" alt="character" class="img-fluid mx-2 mb-3" style="width: 400px;">
+          </div>
+        </div>
+      </div>
+      
+      
+      
+        <div class="new-arrivals">
+            <div class="container">
+              
+                    <div class="text-center">
+                        <h1>NEW ARRIVALS</h1>
+                        <p>All the latest picked from designer of our store</p>
+                    </div>
+                <div class="row  d-flex justify-content-around">
+                    <div class="card overflow-hidden border-info " style="width:300px">
+                        <img class=" card-img-top hover-zoom shadow p-3 " src="https://www.bing.com/images/blob?bcid=r3NN2qDvrs0H6w" alt="Card image">
+                        <div class="card-body text-center">
+                          <h4 class="card-title">MEN'S CLOTHES</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+                          <p> <b class="display-6"> ₹699 </b> </p>                        
+                        </div>
+                      </div>
+
+                      <div class="card overflow-hidden border-info " style="width:300px">
+                        <img class=" card-img-top hover-zoom shadow p-3 " src="https://www.bing.com/images/blob?bcid=ry1kATzkfs0Hkw" alt="Card image">
+                        <div class="card-body text-center">
+                          <h4 class="card-title">MEN'S CLOTHES</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+                          <p> <b class="display-6"> ₹799 </b> </p>                        
+                        </div>
+                      </div>
+
+                      <div class="card overflow-hidden border-info" style="width:300px">
+                        <img class="card-img-top hover-zoom shadow p-3 " src="https://www.bing.com/images/blob?bcid=S.GjF.UfgM0HqxcxoNWLuD9SqbotqVTdPxU" alt="Card image">
+                          <div class="card-body text-center">
+                          <h4 class="card-title">MEN'S CLOTHES</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+                          <p> <b class="display-6"> ₹899 </b> </p>                        
+                        </div>
+                      </div>
+
+                      <div class="card overflow-hidden border-info " style="width:300px">
+                        <img class=" card-img-top hover-zoom shadow p-3 " src="https://www.bing.com/images/blob?bcid=S24RUaN8Is0HqxcxoNWLuD9SqbotqVTdP3k" alt="Card image">
+                        <div class="card-body text-center">
+                          <h4 class="card-title">MEN'S CLOTHES</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+                          <p> <b class="display-6"> ₹299 </b> </p>                        
+                        </div>
+                      </div>
+
+                      <div class="card overflow-hidden border-info " style="width:300px">
+                        <img class=" card-img-top hover-zoom shadow p-3 " src="https://www.bing.com/images/blob?bcid=S05zk0UBFc0HqxcxoNWLuD9SqbotqVTdPzM" alt="Card image">
+                        <div class="card-body text-center">
+                          <h4 class="card-title">MEN'S CLOTHES</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+                          <p> <b class="display-6"> ₹399 </b> </p>                        
+                        </div>
+                      </div>
+
+
+                      <div class="card overflow-hidden border-info " style="width:300px">
+                        <img class=" card-img-top hover-zoom shadow p-3 " src="https://www.bing.com/images/blob?bcid=r6513sHQmM0HJQ" alt="Card image">
+                        <div class="card-body text-center">
+                          <h4 class="card-title">MEN'S CLOTHES</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+                          <p> <b class="display-6"> ₹899 </b> </p>                        
+                        </div>
+                      </div>
+
+
+                      <div class="card overflow-hidden border-info " style="width:300px">
+                        <img class=" card-img-top hover-zoom shadow p-3 " src="https://www.bing.com/images/blob?bcid=S.Mzdb1ppc0HqxcxoNWLuD9SqbotqVTdP3g" alt="Card image">
+                        <div class="card-body text-center">
+                          <h4 class="card-title">MEN'S CLOTHES</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+                          <p> <b class="display-6"> ₹499 </b> </p>                        
+                        </div>
+                      </div>
+
+
+                      <div class="card overflow-hidden border-info " style="width:300px">
+                        <img class=" card-img-top hover-zoom shadow p-3 " src="https://www.bing.com/images/blob?bcid=S.Mzdb1ppc0HqxcxoNWLuD9SqbotqVTdP3g" alt="Card image">
+                        <div class="card-body text-center">
+                          <h4 class="card-title">MEN'S CLOTHES</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+                          <p> <b class="display-6"> ₹399 </b> </p>                        
+                        </div>
+                      </div>
+              
+
+                </div>
+             
+            
+            </div>
+
+        </div>
+        <div class="banner">
+            <div class="container">
+                <div class="row bg-warning p-5">
+                    <div class="col">
+                        <div>
+                            <p>Trend Design</p>
+                            <h1>New Collection 2024</h1>
+                            <p>New Arrival Sale 50% OFF Limited Time Offer</p>
+                            <button type="button" class="btn btn-outline-info">Discover Now</button>
+    
+                        </div>
+                      
+                    </div>
+                    <div class="col ">
+                        <div>
+                            <img class=" shadow p-4 mb-4 bg-white w-100 rounded mx-auto d-block" style="width: 50%;" src="https://www.bing.com/images/blob?bcid=S.1qW6t8OM0HqxcxoNWLuD9SqbotqVTdPyE" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="featured">
+            <div class="container">
+                <div class="title m-5 text-center">
+                    <h1>FEATURED</h1>
+                    <p>All the latest picked from designer of our store</p>
+
+                </div>
+                <div class="img bg-dark p-3 rounded">
+                    <div class="row d-flex justify-content-around ">
+                        
+                            <div class="card overflow-hidden" style="width:300px">
+                                <img class="card-img-top hover-zoom" src="https://www.bing.com/images/blob?bcid=S7JRnHCtyc0HqxcxoNWLuD9SqbotqVTdP10" alt="Card image">
+                                <div class="card-body">
+                                  <h4 class="card-title">MEN'S CLOTHES</h4>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+                                  <p class="text-success">Special price</p>
+                                  <p> <b class="display-6"> ₹500 </b> <del> ₹1100</del> </p>
+                                  <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#" class="btn btn-outline-success">Buy Now</a></li>
+                                    <li class="list-inline-item"><a href="#" class="btn btn-warning">Add To Cart</a></li>
+                      
+                                  </ul>
+                                  
+                                </div>
+                              </div>
+
+                              <!-- nxt-img -->
+                              <div class="card overflow-hidden" style="width:300px">
+                                <img class="card-img-top hover-zoom" src="https://www.bing.com/images/blob?bcid=Sx.s37wpmM0HqxcxoNWLuD9SqbotqVTdP.4" alt="Card image">
+                                <div class="card-body">
+                                  <h4 class="card-title">MEN'S CLOTHES</h4>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+                                  <p class="text-success">Special price</p>
+                                  <p> <b class="display-6"> ₹799 </b> <del> ₹1349</del> </p>
+                                  <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#" class="btn btn-outline-success">Buy Now</a></li>
+                                    <li class="list-inline-item"><a href="#" class="btn btn-warning">Add To Cart</a></li>
+                      
+                                  </ul>
+                                  
+                                </div>
+                              </div>
+                              <!-- nxt -->
+                              <div class="card overflow-hidden " style="width:300px">
+                                <img class="card-img-top hover-zoom" src="https://www.bing.com/images/blob?bcid=r6sMy-tidM0HCw" alt="Card image">
+                                <div class="card-body">
+                                  <h4 class="card-title">MEN'S CLOTHES</h4>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+                                  <p class="text-success">Special price</p>
+                                  <p> <b class="display-6"> ₹999 </b> <del> ₹2499</del> </p>
+                                  <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#" class="btn btn-outline-success">Buy Now</a></li>
+                                    <li class="list-inline-item"><a href="#" class="btn btn-warning">Add To Cart</a></li>
+                      
+                                  </ul>
+                                  
+                                </div>
+                              </div>
+
+                              <!-- nxt img -->
+                              <div class="card overflow-hidden" style="width:300px">
+                                <img class="card-img-top hover-zoom" src="https://www.bing.com/images/blob?bcid=r5i4CUQdys0Hwg" alt="Card image">
+                                <div class="card-body">
+                                  <h4 class="card-title">MEN'S CLOTHES</h4>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+                                  <p class="text-success">Special price</p>
+                                  <p> <b class="display-6"> ₹1499 </b> <del> ₹2699</del> </p>
+                                  <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="#" class="btn btn-outline-success">Buy Now</a></li>
+                                    <li class="list-inline-item"><a href="#" class="btn btn-warning">Add To Cart</a></li>
+                      
+                                  </ul>
+                                  
+                                </div>
+                              </div>
+                            
+
+                    </div>
+             
+
+
+                      
+                    
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid bg-warning ">
+            <div class="row p-5">
+                <div class="col-md-6 p-3">
+                    <div class="">
+                        <h1>EXCELLENT SUPPORT</h1>
+                        <p>We love our customers and they can reach us any time of day we will be at your service 24/7
+                        </p>
+                        <button type="button" class="btn btn-outline-info">Contact</button>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 p-3">
+                    <div class=" ">
+                        <input type="email" class="text-center form-control" id="email" placeholder="Enter Email" name="email">
+                        <button type="button" class="btn btn-success mt-4 px-3">Send</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div class="container-fluid bg-secondary">
+            <div class="row row2">
+                <div class="col-md-4 p-5">
+                    <div class="text-center">
+                        <h2>INFORMATION</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Term &amp; Conditions</a></li>
+                            <li><a href="#">Shipping Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-5">
+                    <div class="text-center">
+                        <h2>USEFUL LINK</h2>
+                        <ul class="list-unstyled ">
+                            <li><a href="#">Online Store</a></li>
+                            <li><a href="#">Customer Services</a></li>
+                            <li><a href="#">Promotion</a></li>
+                            <li><a href="#">Top Brands</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-5">
+                    <div class="text-center">
+                        <i class="fa-brands fa-instagram mx-2 display-5 " style="color: #f2f2f2;"></i>
+                        <i class="fa-brands fa-facebook mx-2 display-5" style="color: #fafafa;"></i>
+                        <i class="fa-brands fa-twitter mx-2 display-5" style="color: #fafafa;"></i>
+                    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS (necessary for responsive navbar toggle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body></html>
